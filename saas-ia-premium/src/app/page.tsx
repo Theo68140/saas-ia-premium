@@ -278,9 +278,9 @@ export default function Home() {
               <p className="text-sm text-slate-300">Workflow IA actif</p>
               <div className="mt-3 flex items-center gap-3 text-xs">
                 <span className="rounded-lg bg-cyan-300/20 px-3 py-2 text-cyan-200">Nouveau lead</span>
-                <span>></span>
+                <span>&gt;</span>
                 <span className="rounded-lg bg-violet-300/20 px-3 py-2 text-violet-200">Qualification GPT</span>
-                <span>></span>
+                <span>&gt;</span>
                 <span className="rounded-lg bg-emerald-300/20 px-3 py-2 text-emerald-200">Email auto</span>
               </div>
             </div>
