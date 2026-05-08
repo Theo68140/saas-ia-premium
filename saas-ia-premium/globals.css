@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background: #06070d;
+  color: #f5f7ff;
+}
+
+* {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.glass {
+  background: linear-gradient(140deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.04));
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(18px);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #88ccff, #b697ff 40%, #52e6c2 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.mesh-aurora {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.mesh-aurora::before,
+.mesh-aurora::after {
+  content: "";
+  position: absolute;
+  width: 48rem;
+  height: 48rem;
+  border-radius: 9999px;
+  filter: blur(100px);
+  opacity: 0.22;
+  animation: drift 16s ease-in-out infinite;
+}
+
+.mesh-aurora::before {
+  top: -14rem;
+  left: -10rem;
+  background: #38bdf8;
+}
+
+.mesh-aurora::after {
+  right: -12rem;
+  bottom: -18rem;
+  background: #8b5cf6;
+  animation-delay: -6s;
+}
+
+@keyframes drift {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(35px, -25px) scale(1.08);
+  }
+}
