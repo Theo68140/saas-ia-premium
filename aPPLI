@@ -1,0 +1,7 @@
+cd C:\Users\User\.cursor\projects\empty-window\saas-ia-premium
+git init
+git add .
+git commit -m "Initial commit - SaaS IA premium landing"
+git branch -M main
+git remote add origin https://github.com/TON-USERNAME/saas-ia-premium.git
+git push -u origin main
